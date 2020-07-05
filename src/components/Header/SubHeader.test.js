@@ -23,18 +23,16 @@ describe('<SubHeader />', () => {
 
 		const component = shallow(<SubHeader openForm={mockOpenForm}   goBack={mockGoBack}/>);
 
-		const goBackButton = component.find(SubHeaderButton);
-		const goBackButton = component.find(SubHeaderButton).at(0);
+			const goBackButton = component.find(SubHeaderButton).at(0);
 		expect(goBackButton.exists()).toBe(true);
 
-		const mockOpenForm = component.find(SubHeaderButton);
-		const mockOpenForm = component.find(SubHeaderButton).at(1);
-		expect(mockOpenForm.exists()).toBe(true);
+			 const 	openFormButton = component.find(SubHeaderButton).at(1);
+		expect(openFormButton.exists()).toBe(true);
 
 		goBackButton.simulate('click');
 		expect(mockGoBack).toHaveBeenCalled();
 
-		mockOpenForm.simulate('click');
+		openFormButton.simulate('click');
 		expect(mockOpenForm).toHaveBeenCalled();
 
 	});
