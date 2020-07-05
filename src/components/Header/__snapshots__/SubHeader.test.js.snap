@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SubHeader /> should render 1`] = `ShallowWrapper {}`;
+
+exports[`<SubHeader /> should render with a dynamic title 1`] = `ShallowWrapper {}`;
+
+exports[`<SubHeader /> should render with a form button 1`] = `ShallowWrapper {}`;
+
+exports[`<SubHeader /> should render with a goBack button 1`] = `ShallowWrapper {}`;
